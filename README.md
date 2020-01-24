@@ -133,6 +133,8 @@ npm install multicoin-address-validator
 * ZCash/zec `'ZCash'` or `'zec'`
 * ZClassic/zcl `'ZClassic'` or `'zcl'`
 * ZenCash/zen `'ZenCash'` or `'zen'`
+* USDC Coin/ usdc `'USDC'` or `'zen'`
+* Binance Coin/ bnb `'BNB'` or `'bnb'`
 
 
 ### Usage example

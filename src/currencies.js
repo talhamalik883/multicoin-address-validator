@@ -12,7 +12,7 @@ var BCHValidator = require('./bch_validator');
 var XLMValidator = require('./stellar_validator');
 var EOSValidator = require('./eos_validator');
 var XTZValidator = require('./tezos_validator');
-
+var BNBValidator = require('./bnb_validator')
 // defines P2PKH and P2SH address types for standard (prod) and testnet networks
 var CURRENCIES = [
     {
@@ -444,6 +444,14 @@ var CURRENCIES = [
         symbol: 'mkr',
         validator: ETHValidator,
     }, {
+        name: 'USDC Coin',
+        symbol: 'usdc',
+        validator: ETHValidator,
+    }, {
+        name: 'Binance Coin',
+        symbol: 'bnb',
+        validator: BNBValidator,
+    },{
         name: 'Metal',
         symbol: 'mtl',
         validator: ETHValidator,

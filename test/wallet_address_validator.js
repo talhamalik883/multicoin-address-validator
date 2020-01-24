@@ -563,6 +563,20 @@ describe('WAValidator.validate()', function () {
             valid('binancecleos', 'eos');
             valid('123456789012', 'eos');
         });
+
+        it('should return true for correct USDC addresses', function () {
+            valid('0x2abf9f753d0af02cca358f98d633bad81cc555ed', 'ETH');
+            valid('0xee7d935a65d578fca300e53540b06fc5322ea17b', 'ETH');
+            valid('0x45414a762e52430e76516ed1f433375bf0aadca9', 'ETH');
+            valid('0xde2296bd473845499618f8317161957c0fa454bc', 'ETH');
+        });
+
+        it('should return true for correct BNB addresses', function () {
+            valid('bnb19glkxw5egvz9gcn2338uw78m52n506jhc9cpvx', 'bnb');
+            valid('bnb14hadk0sfjr3u2mg77xlcge9fa6vz250wqcxfj8', 'bnb');
+            valid('bnb1gpnz5h6smz9h5wfs22kl7cqcqteu6z66am26fm', 'bnb');
+            valid('bnb1zs0q2grzfe3m604hx96zr70vfm26vx06wn5tku', 'bnb');
+        });
     });
 
     describe('invalid results', function () {
